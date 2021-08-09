@@ -1,0 +1,107 @@
+body{
+    /* URA https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperaccess.com%2Ftesla-4k-model-s&psig=AOvVaw2HmIIVJzGfRXXeQexpcLZn&ust=1627014317352000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIi8sOrq9fECFQAAAAAdAAAAABAJ */
+background-image: url("Photo/5.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom;
+height: 100vh;
+width: 100vw;
+overflow: hidden;
+text-align: center;
+margin:0;
+padding: 0;
+transition: 0.5s ease-in-out;
+}
+h1{
+color: gray;
+margin-top: 3.5rem;
+}
+
+.Asami{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 7.3rem;
+    height: 12.5%;
+    color: white;
+    font-size: 1.5rem;
+    align-items: center;
+}
+button {
+    background: rgba(0, 0, 0, 0.1);
+    border: 0;
+    box-sizing: border-box;
+    margin: 29rem 0 0 80rem;
+    padding: 1em 2em;
+    
+    box-shadow: inset 0 0 0 2px white;
+    color: white;
+    font-size: inherit;
+    font-weight: 700;
+    border-radius: 50rem;
+  
+
+    position: relative;
+    vertical-align: middle;
+}
+    button::before,
+    button::after {
+      box-sizing: inherit;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+}
+button:hover{
+    cursor: pointer;
+    } 
+.draw {
+    transition: color 0.25s;
+    border-radius: 50rem;
+}
+.draw::before,
+  .draw::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+  .draw::before {
+    top: 0;
+    left: 0;
+  }
+
+  .draw::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .draw:hover {
+    color: black;
+  }
+
+
+  .draw:hover::before,
+  .draw:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 50rem;
+  }
+
+  .draw:hover::before {
+    border-top-color: black; 
+    border-right-color: black;
+    transition:
+      width 0.25s ease-out,
+      height 0.25s ease-out 0.25s; 
+      border-radius: 50rem;
+  }
+
+  .draw:hover::after {
+    border-bottom-color: black; 
+    border-left-color: black;
+    transition:
+      border-color 0s ease-out 0.5s, 
+      width 0.25s ease-out 0.5s, 
+      height 0.25s ease-out 0.75s;
+  }
+

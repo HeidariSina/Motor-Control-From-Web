@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Motor Page</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Please Select The Rotation Of Car
+        </h1>
+    </div>
+    <div class="tasvir" id="tasvir">
+
+    </div>
+    <div class="matn">
+        <h2 id="h2">
+            The Car is Not Moving Right Now
+        </h2>
+    </div>
+    <div class="Dokme">
+        <button id="L">
+            Left &#8635;
+        </button>
+        <button id="F">
+            Forward &#8648;
+        </button>
+        <button id="R">
+            Right &#8634;
+        </button>
+    </div>
+</body>
+<script>
+    document.querySelector('#R').addEventListener("click", funcR);
+    document.querySelector('#F').addEventListener("click", funcF);
+    document.querySelector('#L').addEventListener("click", funcL);
+    x = document.querySelector('#tasvir');
+    y = document.querySelector('#h2');
+
+    function funcR() {
+        x.style.backgroundImage = "url('Gif/ezgif.com-gif-maker.gif')";
+        y.innerHTML = "The Car Rotation is Right";
+        x.style.backgroundSize = '40rem' ;
+        x.style.border = '0.3rem solid gray';
+        x.style.borderRadius = '50rem 50rem 50rem 50rem';
+    }
+    function funcF() {
+        x.style.backgroundImage = "url('gif/forward.gif')";
+        y.innerHTML = "The Car is Going Forward";
+        x.style.backgroundSize = '20rem' ;
+        x.style.border = '0.3rem solid gray';
+        x.style.borderRadius = '50rem 50rem 50rem 50rem';
+    }
+    function funcL() {
+        x.style.backgroundImage = "url(gif/car_animate.gif)";
+        y.innerHTML = "The Car Rotation is Left";
+        x.style.backgroundSize = '40rem' ;
+        x.style.border = '0.3rem solid gray';
+        x.style.borderRadius = '50rem 50rem 50rem 50rem';
+    }
+</script>
+
+</html>
